@@ -599,7 +599,6 @@ So there we have it. The skills that you have learned in this lab can be used to
 * See which Twitter member is mentioning you the most at Twitter.
 * ON-going : Repeatedly mine twitter (say once per day) on a topic of interest and collect,parse,visualize tweets to see any changing trends. 
 
-
 ## Further Reading 
 
 * [Introduction to NLP](https://blog.algorithmia.com/introduction-natural-language-processing-nlp/)
