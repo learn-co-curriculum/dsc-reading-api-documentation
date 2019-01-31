@@ -1,6 +1,7 @@
 
 # Reading API Documentation
 
+The previously deployed lab around working with the twitter API and basic NLP can be found [here](https://github.com/learn-co-curriculum/dsc-2-15-09-accessing-data-from-twitter-lab/tree/3beebcae99f651a1a4c839f8e90120f8403361fb) (not relevant for new students).
 
 ## Introduction 
 We've now covered an example API request, but how on Earth would you know how to do that on your own? The answer is through documentation! All APIs will have associated documentation, and while there are substantial similarities, all will be different to one degree or another. The best way to get more comfortable is to practice! So with that, let's take a look at the yelp documentation associated with our previous example.  
