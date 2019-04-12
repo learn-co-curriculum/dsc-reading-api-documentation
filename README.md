@@ -14,18 +14,18 @@ You will be able to:
 
 Start by navigating to: https://www.yelp.com/developers/documentation/v3/get_started and having a look for yourself!  
 
-<img src="images/yelp_overview.png">
+<img src="images/yelp_overview.png" width="800">
 
 As you see at the top, the first piece of almost every API is authentication. 
 
 This is where we started in the previous codealong, where we went to https://www.yelp.com/developers/v3/manage_app and created a new app. 
 
-<img src="images/yelp_app.png">
+<img src="images/yelp_app.png"  width="800">
 
 Let's take a closer look at Yelp's authentication documentation:  
 https://www.yelp.com/developers/documentation/v3/authentication
     
-<img src="images/yelp_auth.png">
+<img src="images/yelp_auth.png" width="800">
 
 Notice in the documentation, it gives us the specific format "Put the API Key in the request header as "Authorization: Bearer <YOUR API KEY>"." This is what we passed in our get request.   
     
@@ -45,7 +45,7 @@ response = requests.get(url, header=header)
 
  With that, let's take a look at how the rest of our request should be formatted. Go to https://www.yelp.com/developers/documentation/v3/business_search  and take a couple minutes to look things over.
  
- <img src="images/yelp_docs.png">
+ <img src="images/yelp_docs.png"  width="800">
 
 Notice the first part is the format of the get request! This is the url we pass into our get request. From there, the available parameters that you can pass are listed. These define your query, some are required while others are optional.
 
