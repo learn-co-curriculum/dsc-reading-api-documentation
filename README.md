@@ -28,8 +28,37 @@ https://www.yelp.com/developers/documentation/v3/authentication
 <img src="images/yelp_auth.png" width="800">
 
 Notice in the documentation, it gives us the specific format "Put the API Key in the request header as "Authorization: Bearer <YOUR API KEY>"." This is what we passed in our get request.   
-    
-As a reminder, we have:
+
+
+Before we do this, let's import your authentication token which you have appropriately stored in **a seperate file** from the codealong before.
+
+
+```python
+import json
+
+#Our previous function for loading our api key file
+def get_keys(path):
+    with open(path) as f:
+        return json.load(f)
+```
+
+> **Note**: Like before, change the file path below to be your root directory. 
+If you're not sure what your username is, check it with `pwd`  
+For example, my current working directory is ```/Users/matthew.mitchell/Documents/dsc-using-yelp-api-codealong```  
+So the line below would become:
+```keys = get_keys("/Users/matthew.mitchell/.secret/yelp_api.json")```
+
+
+
+```python
+keys = get_keys("/Users/YOUR_USERNAME_HERE/.secret/yelp_api.json")
+
+api_key = keys['api_key']
+
+#While you may wish to print out these api keys to check that they imported properly,
+#be sure to clear the output before uploading to Github. 
+#Again, you don't want your keys stolen!!!
+```
 
 
 ```python
@@ -53,8 +82,6 @@ Reviewing our python package we thus have:
 
 
 ```python
-#Note: this cell won't return a valid response unless you specify your api key
-api_key = #put your api key (as a string) here
 url = 'https://api.yelp.com/v3/businesses/search'
 
 headers = {
@@ -71,9 +98,6 @@ Note that location or latitude and longitude are the only required parameters. T
 
 
 ```python
-#Note: this cell won't return a valid response unless you specify your api key
-api_key = #put your api key (as a string) here
-
 url = 'https://api.yelp.com/v3/businesses/search'
 
 headers = {
