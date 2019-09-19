@@ -12,7 +12,7 @@ You will be able to:
 * Translate documentation into Python code
 * Execute get requests in order to utilize the Yelp API
 
-Start by navigating to: https://www.yelp.com/developers/documentation/v3/get_started and having a look for yourself!  
+Start by navigating to https://www.yelp.com/developers/documentation/v3/get_started and having a look for yourself!  
 
 <img src="images/yelp_overview.png" width="800">
 
@@ -30,7 +30,7 @@ https://www.yelp.com/developers/documentation/v3/authentication
 Notice in the documentation, it gives us the specific format "Put the API Key in the request header as "Authorization: Bearer <YOUR API KEY>"." This is what we passed in our get request.   
 
 
-Before we do this, let's import your authentication token which you have appropriately stored in **a seperate file** from the codealong before.
+Before we do this, let's import your authentication token which you have appropriately stored in **a separate file** from the codealong before.
 
 
 ```python
@@ -72,11 +72,11 @@ header = {"Authorization" : "Bearer {}".format(api_key)}
 response = requests.get(url, header=header)
 ```
 
- With that, let's take a look at how the rest of our request should be formatted. Go to https://www.yelp.com/developers/documentation/v3/business_search  and take a couple minutes to look things over.
+ With that, let's take a look at how the rest of our request should be formatted. Go to https://www.yelp.com/developers/documentation/v3/business_search  and take a couple of minutes to look things over.
  
  <img src="images/yelp_docs.png"  width="800">
 
-Notice the first part is the format of the get request! This is the url we pass into our get request. From there, the available parameters that you can pass are listed. These define your query, some are required while others are optional.
+Notice the first part is the format of the get request! This is the URL we pass into our get request. From there, the available parameters that you can pass are listed. These define your query, some are required while others are optional.
 
 Reviewing our python package we thus have:
 
