@@ -8,9 +8,8 @@ We've now covered an example API request, but how on Earth would you know how to
 
 You will be able to:
 
-* Read API Documentation
-* Translate documentation into Python code
-* Execute get requests in order to utilize the Yelp API
+* Interpret API documentation into Python code
+* Make requests using OAuth
 
 Start by navigating to https://www.yelp.com/developers/documentation/v3/get_started and having a look for yourself!  
 
